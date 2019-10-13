@@ -14,9 +14,9 @@ public class Main {
             System.out.println("Length Correct.");
             for(int i=0; i<tweet.length(); i++){
                 char letter = tweet.charAt(i);
-		    if (letter == '#')hashtags++;
-		    else if (letter == '@')attributions++;
-	            else if (letter == 'h'&& tweet.startsWith("http://",i)) links++; 
+		if (letter == '#')hashtags++;
+		else if (letter == '@')attributions++;
+	        else if (letter == 'h'&& tweet.startsWith("http://",i)) links++; 
             }
 		
             System.out.println("Number of Hashtags: " + hashtags);
